@@ -1,0 +1,8 @@
+{
+  "name": "The Swat Loom",
+  "description": "A luxury immersive e-commerce experience for traditional Swati Shawls, featuring an AI-powered Master Weaver stylist.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

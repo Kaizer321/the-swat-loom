@@ -1,0 +1,48 @@
+import React from 'react';
+import { 
+  ShoppingBag, X, Menu, MessageSquare, Sparkles, ArrowRight, Mountain, Wind, Search, 
+  Lock, Trash2, Edit2, Plus, Save, Upload, Check, Truck, Clock, ClipboardList, Ban, 
+  CheckCircle, Package, MapPin, RotateCw, Layers, Scissors, ShieldCheck, Share2, 
+  Copy, FileText, CheckCheck, Activity, Calendar, ChevronRight, Info, ExternalLink,
+  Sparkle
+} from 'lucide-react';
+
+export const Icons = {
+  Bag: ShoppingBag,
+  Close: X,
+  Menu: Menu,
+  Chat: MessageSquare,
+  Sparkles: Sparkles,
+  Sparkle: Sparkle,
+  ArrowRight: ArrowRight,
+  Mountain: Mountain,
+  Wind: Wind,
+  Search: Search,
+  Lock: Lock,
+  Trash: Trash2,
+  Edit: Edit2,
+  Plus: Plus,
+  Save: Save,
+  Upload: Upload,
+  Check: Check,
+  Truck: Truck,
+  Clock: Clock,
+  Clipboard: ClipboardList,
+  Ban: Ban,
+  CheckCircle: CheckCircle,
+  Package: Package,
+  MapPin: MapPin,
+  Refresh: RotateCw,
+  Layers: Layers,
+  Scissors: Scissors,
+  ShieldCheck: ShieldCheck,
+  Share: Share2,
+  Copy: Copy,
+  Receipt: FileText,
+  Delivered: CheckCheck,
+  Activity: Activity,
+  Calendar: Calendar,
+  ChevronRight: ChevronRight,
+  Info: Info,
+  ExternalLink: ExternalLink
+};
