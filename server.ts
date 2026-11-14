@@ -654,4 +654,20 @@ async function startServer() {
   });
 }
 
-startServer();
+// Vercel serves files from public/ through its CDN. This fallback handles SPA routes.
+if (process.env.VERCEL) {
+  app.use((req: Request, res: Response, next) => {
+    if (req.path.startsWith('/api')) return next();
+    res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+  });
+}
+
+// Local/Render runtime keeps the existing HTTP + WebSocket server.
+if (!process.env.VERCEL) {
+  startServer().catch((error) => {
+    console.error('Failed to start The Swat Loom server:', error);
+    process.exitCode = 1;
+  });
+}
+
+export default app;
