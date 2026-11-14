@@ -9,6 +9,9 @@ export default defineConfig(() => {
         host: '0.0.0.0',
       },
       plugins: [react()],
+      // Vercel serves this directory as static CDN assets.
+      publicDir: false,
+      build: { outDir: 'public', emptyOutDir: true },
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
